@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using QLNK.WinformApp.Forms;
 
 namespace QLNK.WinformApp
 {
@@ -15,6 +8,12 @@ namespace QLNK.WinformApp
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btnCaiDatChung_Click(object sender, EventArgs e)
+        {
+            FormCaiDatChung formCaiDatChung = new FormCaiDatChung { MdiParent = this};
+            formCaiDatChung.Show();
         }
     }
 }
