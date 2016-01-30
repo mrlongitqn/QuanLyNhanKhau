@@ -59,7 +59,6 @@
             // groupPanel1
             // 
             this.groupPanel1.BackColor = System.Drawing.Color.White;
-            this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.btnThoat);
             this.groupPanel1.Controls.Add(this.btnLuu);
@@ -313,21 +312,25 @@
             // 
             // btnLuu
             // 
+            this.btnLuu.BackColor = System.Drawing.Color.White;
+            this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Location = new System.Drawing.Point(157, 502);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 22;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseVisualStyleBackColor = false;
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.ForeColor = System.Drawing.Color.Black;
             this.btnThoat.Location = new System.Drawing.Point(248, 502);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 23;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // FormCaiDatChung
@@ -338,6 +341,7 @@
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
             this.Name = "FormCaiDatChung";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             this.ResumeLayout(false);
