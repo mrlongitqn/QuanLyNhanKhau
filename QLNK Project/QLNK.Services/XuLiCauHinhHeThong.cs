@@ -12,14 +12,14 @@ namespace QLNK.Services
    public class XuLiCauHinhHeThong : CauHinhChungRepository
    {
        private readonly CauHinhChungRepository _cauHinhChungRepository;
-       public XuLiCauHinhHeThong(IUnitOfWork unitOfWork, CauHinhChungRepository cauHinhChungRepository) : base(unitOfWork)
+       public XuLiCauHinhHeThong(IUnitOfWork unitOfWork) : base(unitOfWork)
        {
-           _cauHinhChungRepository = cauHinhChungRepository;
+           _cauHinhChungRepository = new CauHinhChungRepository(unitOfWork);
        }
 
-       //public CauHinhChung GetByKey(string key)
-       //{
-       //     return _cauHinhChungRepository.
-       // }
-   }
+        public CauHinhChung GetByKey(string key)
+        {
+            return _cauHinhChungRepository.GetAll().SingleOrDefault(t => t.TuKhoa.Equals(key));
+        }
+    }
 }
