@@ -20,5 +20,12 @@ namespace QLNK.WinformApp
             FormCaiDatChung formCaiDatChung = new FormCaiDatChung(xuLiCauHinhHeThong) { MdiParent = this};
             formCaiDatChung.Show();
         }
+
+        private void btnCaiDatNguoiDung_Click(object sender, EventArgs e)
+        {
+
+            FormCaiDatNguoiDung formCaiDatNguoiDung = new FormCaiDatNguoiDung {MdiParent = this};
+            formCaiDatNguoiDung.Show();
+        }
     }
 }

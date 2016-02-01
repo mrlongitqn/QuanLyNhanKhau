@@ -92,9 +92,9 @@
             this.ribbonControl1.CaptionVisible = true;
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel5);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel4);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel5);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.ForeColor = System.Drawing.Color.Black;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -197,6 +197,7 @@
             this.btnCaiDatNguoiDung.Name = "btnCaiDatNguoiDung";
             this.btnCaiDatNguoiDung.SubItemsExpandWidth = 14;
             this.btnCaiDatNguoiDung.Text = "Cài đặt người dùng";
+            this.btnCaiDatNguoiDung.Click += new System.EventHandler(this.btnCaiDatNguoiDung_Click);
             // 
             // ribbonPanel2
             // 
@@ -206,7 +207,7 @@
             this.ribbonPanel2.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(786, 97);
+            this.ribbonPanel2.Size = new System.Drawing.Size(998, 97);
             // 
             // 
             // 
@@ -300,7 +301,7 @@
             this.ribbonPanel5.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel5.Name = "ribbonPanel5";
             this.ribbonPanel5.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel5.Size = new System.Drawing.Size(786, 97);
+            this.ribbonPanel5.Size = new System.Drawing.Size(998, 97);
             // 
             // 
             // 
@@ -323,7 +324,7 @@
             this.ribbonPanel4.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel4.Name = "ribbonPanel4";
             this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel4.Size = new System.Drawing.Size(786, 97);
+            this.ribbonPanel4.Size = new System.Drawing.Size(998, 97);
             // 
             // 
             // 
@@ -346,7 +347,7 @@
             this.ribbonPanel3.Location = new System.Drawing.Point(0, 54);
             this.ribbonPanel3.Name = "ribbonPanel3";
             this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel3.Size = new System.Drawing.Size(786, 97);
+            this.ribbonPanel3.Size = new System.Drawing.Size(998, 97);
             // 
             // 
             // 
@@ -613,7 +614,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 719);
+            this.ClientSize = new System.Drawing.Size(1008, 717);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "MainForm";

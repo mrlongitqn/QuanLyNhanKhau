@@ -3,8 +3,6 @@ using System.Windows.Forms;
 using QLNK.Services;
 using  QLNK.Common.Enums;
 using QLNK.Common.Utilities;
-using QLNK.EF;
-
 namespace QLNK.WinformApp.Forms
 {
     public partial class FormCaiDatChung : DevComponents.DotNetBar.Metro.MetroForm

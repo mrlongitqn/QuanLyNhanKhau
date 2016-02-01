@@ -68,6 +68,12 @@
     <Compile Include="Forms\FormCaiDatChung.Designer.cs">
       <DependentUpon>FormCaiDatChung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCaiDatNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCaiDatNguoiDung.Designer.cs">
+      <DependentUpon>FormCaiDatNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormCaiDatChung.resx">
       <DependentUpon>FormCaiDatChung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCaiDatNguoiDung.resx">
+      <DependentUpon>FormCaiDatNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
