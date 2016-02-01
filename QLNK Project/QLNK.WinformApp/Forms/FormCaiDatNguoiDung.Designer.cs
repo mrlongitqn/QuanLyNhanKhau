@@ -41,11 +41,11 @@
             this.rbLoaiNguoiDung = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgrvNguoiDung = new System.Windows.Forms.DataGridView();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrvNguoiDung)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -181,16 +181,22 @@
             this.radioButton3.Text = "CSKV";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgrvNguoiDung
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgrvNguoiDung.AllowUserToAddRows = false;
+            this.dgrvNguoiDung.AllowUserToDeleteRows = false;
+            this.dgrvNguoiDung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 210);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1183, 381);
-            this.dataGridView1.TabIndex = 10;
+            this.dgrvNguoiDung.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgrvNguoiDung.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dgrvNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrvNguoiDung.Location = new System.Drawing.Point(-3, 210);
+            this.dgrvNguoiDung.Name = "dgrvNguoiDung";
+            this.dgrvNguoiDung.ReadOnly = true;
+            this.dgrvNguoiDung.RowHeadersVisible = false;
+            this.dgrvNguoiDung.Size = new System.Drawing.Size(1185, 381);
+            this.dgrvNguoiDung.TabIndex = 10;
             // 
             // btnLuu
             // 
@@ -219,7 +225,7 @@
             this.ClientSize = new System.Drawing.Size(1179, 592);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgrvNguoiDung);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rbLoaiNguoiDung);
@@ -237,7 +243,7 @@
             this.Text = "Cài đặt người dùng";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrvNguoiDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,7 +264,7 @@
         private System.Windows.Forms.RadioButton rbLoaiNguoiDung;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgrvNguoiDung;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnThoat;
     }

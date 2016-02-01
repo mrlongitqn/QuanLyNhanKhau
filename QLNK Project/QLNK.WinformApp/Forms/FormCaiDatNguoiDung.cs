@@ -4,13 +4,18 @@ using QLNK.Services;
 using QLNK.Common.Enums;
 using QLNK.Common.Utilities;
 using QLNK.EF;
+using QLNK.Repositories.Interfaces;
+
 namespace QLNK.WinformApp.Forms
 {
     public partial class FormCaiDatNguoiDung : DevComponents.DotNetBar.Metro.MetroForm
     {
-        public FormCaiDatNguoiDung()
+        private readonly CauHinhNguoiDungService _cauHinhNguoiDungService;
+        public FormCaiDatNguoiDung(IUnitOfWork unitOfWork)
         {
+            _cauHinhNguoiDungService = new CauHinhNguoiDungService(unitOfWork);
             InitializeComponent();
+            LoadDuLieu();
         }
 
         private void btnThoat_Click(object sender, System.EventArgs e)
@@ -29,7 +34,14 @@ namespace QLNK.WinformApp.Forms
                 QuyenHan = "Admin",
                 TrangThai = true
             };
-            
+            MessageBox.Show(_cauHinhNguoiDungService.Insert(nguoiDung) > 0
+                ? @"Thêm mới thành công"
+                : @"Thêm mới không thành công");
+        }
+
+        private void LoadDuLieu()
+        {
+            dgrvNguoiDung.DataSource = _cauHinhNguoiDungService.GetAll();
         }
     }
 }

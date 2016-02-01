@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CauHinhNguoiDungService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XuLiCauHinhHeThong.cs" />
+    <Compile Include="CauHinhHeThongService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLNK.EF\QLNK.EF.csproj">

@@ -3,14 +3,16 @@ using System.Windows.Forms;
 using QLNK.Services;
 using  QLNK.Common.Enums;
 using QLNK.Common.Utilities;
+using QLNK.Repositories.Interfaces;
+
 namespace QLNK.WinformApp.Forms
 {
     public partial class FormCaiDatChung : DevComponents.DotNetBar.Metro.MetroForm
     {
-        private readonly XuLiCauHinhHeThong _xuLiCauHinhHeThong;
-        public FormCaiDatChung(XuLiCauHinhHeThong xuLiCauHinhHeThong)
+        private readonly CauHinhHeThongService _xuLiCauHinhHeThong;
+        public FormCaiDatChung(IUnitOfWork unitOfWork)
         {
-            this._xuLiCauHinhHeThong = xuLiCauHinhHeThong;
+            this._xuLiCauHinhHeThong = new CauHinhHeThongService(unitOfWork);
             InitializeComponent();
             LoadDuLieu();
         }

@@ -9,10 +9,10 @@ using QLNK.Repositories.Interfaces;
 
 namespace QLNK.Services
 {
-   public class XuLiCauHinhHeThong : CauHinhChungRepository
+   public class CauHinhHeThongService : CauHinhChungRepository
    {
        private readonly CauHinhChungRepository _cauHinhChungRepository;
-       public XuLiCauHinhHeThong(IUnitOfWork unitOfWork) : base(unitOfWork)
+       public CauHinhHeThongService(IUnitOfWork unitOfWork) : base(unitOfWork)
        {
            _cauHinhChungRepository = new CauHinhChungRepository(unitOfWork);
        }
