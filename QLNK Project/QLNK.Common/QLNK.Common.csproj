@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\CaiDatChungEnum.cs" />
+    <Compile Include="Enums\LoaiNguoiDungEnum.cs" />
+    <Compile Include="Enums\QuyenSuDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\ObjectExtension.cs" />
   </ItemGroup>

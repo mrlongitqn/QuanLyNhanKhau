@@ -7,7 +7,7 @@ using QLNK.Repositories.Interfaces;
 
 namespace QLNK.WinformApp.Forms
 {
-    public partial class FormCaiDatChung : DevComponents.DotNetBar.Metro.MetroForm
+    public partial class FormCaiDatChung : DevComponents.DotNetBar.Office2007Form
     {
         private readonly CauHinhHeThongService _xuLiCauHinhHeThong;
         public FormCaiDatChung(IUnitOfWork unitOfWork)

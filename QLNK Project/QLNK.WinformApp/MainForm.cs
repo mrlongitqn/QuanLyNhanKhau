@@ -25,5 +25,7 @@ namespace QLNK.WinformApp
             FormCaiDatNguoiDung formCaiDatNguoiDung = new FormCaiDatNguoiDung(_unitOfWork) {MdiParent = this};
             formCaiDatNguoiDung.Show();
         }
+
+       
     }
 }
