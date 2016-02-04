@@ -191,7 +191,7 @@
             // btnDanhMucTenDuong
             // 
             this.btnDanhMucTenDuong.Image = global::QLNK.WinformApp.Properties.Resources.roadblock;
-            this.btnDanhMucTenDuong.ImagePaddingHorizontal = 15;
+            this.btnDanhMucTenDuong.ImagePaddingHorizontal = 40;
             this.btnDanhMucTenDuong.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnDanhMucTenDuong.Name = "btnDanhMucTenDuong";
             this.btnDanhMucTenDuong.SubItemsExpandWidth = 14;
@@ -199,30 +199,45 @@
             // 
             // btnDanhMucKhuPho
             // 
+            this.btnDanhMucKhuPho.Image = global::QLNK.WinformApp.Properties.Resources.barchart;
+            this.btnDanhMucKhuPho.ImagePaddingHorizontal = 40;
+            this.btnDanhMucKhuPho.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnDanhMucKhuPho.Name = "btnDanhMucKhuPho";
             this.btnDanhMucKhuPho.SubItemsExpandWidth = 14;
             this.btnDanhMucKhuPho.Text = "Khu phố";
             // 
             // btnOKhuVuc
             // 
+            this.btnOKhuVuc.Image = global::QLNK.WinformApp.Properties.Resources.tv;
+            this.btnOKhuVuc.ImagePaddingHorizontal = 40;
+            this.btnOKhuVuc.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnOKhuVuc.Name = "btnOKhuVuc";
             this.btnOKhuVuc.SubItemsExpandWidth = 14;
             this.btnOKhuVuc.Text = "Ô khu vực";
             // 
             // btnToDanPho
             // 
+            this.btnToDanPho.Image = global::QLNK.WinformApp.Properties.Resources.running;
+            this.btnToDanPho.ImagePaddingHorizontal = 40;
+            this.btnToDanPho.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnToDanPho.Name = "btnToDanPho";
             this.btnToDanPho.SubItemsExpandWidth = 14;
             this.btnToDanPho.Text = "Tổ dân phố";
             // 
             // btnTinhTrangNhaO
             // 
+            this.btnTinhTrangNhaO.Image = global::QLNK.WinformApp.Properties.Resources.bookshelf;
+            this.btnTinhTrangNhaO.ImagePaddingHorizontal = 40;
+            this.btnTinhTrangNhaO.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnTinhTrangNhaO.Name = "btnTinhTrangNhaO";
             this.btnTinhTrangNhaO.SubItemsExpandWidth = 14;
             this.btnTinhTrangNhaO.Text = "Tình trạng nhà ở";
             // 
             // btnTinhTrangCuTru
             // 
+            this.btnTinhTrangCuTru.Image = global::QLNK.WinformApp.Properties.Resources.clipboard;
+            this.btnTinhTrangCuTru.ImagePaddingHorizontal = 40;
+            this.btnTinhTrangCuTru.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnTinhTrangCuTru.Name = "btnTinhTrangCuTru";
             this.btnTinhTrangCuTru.SubItemsExpandWidth = 14;
             this.btnTinhTrangCuTru.Text = "Tình trạng cư trú";
@@ -269,7 +284,7 @@
             this.btnCaiDatNguoiDung});
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(134, 95);
+            this.ribbonBar1.Size = new System.Drawing.Size(217, 95);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 0;
             // 
@@ -284,7 +299,7 @@
             // btnCaiDatChung
             // 
             this.btnCaiDatChung.Image = global::QLNK.WinformApp.Properties.Resources.settings;
-            this.btnCaiDatChung.ImagePaddingHorizontal = 15;
+            this.btnCaiDatChung.ImagePaddingHorizontal = 40;
             this.btnCaiDatChung.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnCaiDatChung.Name = "btnCaiDatChung";
             this.btnCaiDatChung.SubItemsExpandWidth = 14;
@@ -294,7 +309,7 @@
             // btnCaiDatNguoiDung
             // 
             this.btnCaiDatNguoiDung.Image = global::QLNK.WinformApp.Properties.Resources.profle;
-            this.btnCaiDatNguoiDung.ImagePaddingHorizontal = 15;
+            this.btnCaiDatNguoiDung.ImagePaddingHorizontal = 50;
             this.btnCaiDatNguoiDung.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnCaiDatNguoiDung.Name = "btnCaiDatNguoiDung";
             this.btnCaiDatNguoiDung.SubItemsExpandWidth = 14;
@@ -621,7 +636,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 713);
+            this.ClientSize = new System.Drawing.Size(1008, 711);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "MainForm";
