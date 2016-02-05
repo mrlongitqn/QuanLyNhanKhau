@@ -68,7 +68,7 @@ namespace QLNK.WinformApp.Forms
 
         private void btnThoat_Click(object sender, System.EventArgs e)
         {
-            this.Dispose();
+            Dispose();
         }
 
         private void btnLuu_Click(object sender, System.EventArgs e)
