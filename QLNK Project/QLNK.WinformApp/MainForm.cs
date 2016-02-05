@@ -26,6 +26,10 @@ namespace QLNK.WinformApp
             formCaiDatNguoiDung.Show();
         }
 
-       
+        private void btnDanhMucTenDuong_Click(object sender, EventArgs e)
+        {
+            FormDanhMucTenDuong formDanhMucTenDuong = new FormDanhMucTenDuong(_unitOfWork) { MdiParent = this};
+            formDanhMucTenDuong.Show();
+        }
     }
 }
