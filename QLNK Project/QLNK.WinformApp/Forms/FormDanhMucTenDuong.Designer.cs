@@ -97,6 +97,7 @@
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThoat
             // 
@@ -116,25 +117,25 @@
             this.btnSuaItem,
             this.btnXemItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
             // 
             // btnXoaItem
             // 
             this.btnXoaItem.Name = "btnXoaItem";
-            this.btnXoaItem.Size = new System.Drawing.Size(152, 22);
+            this.btnXoaItem.Size = new System.Drawing.Size(137, 22);
             this.btnXoaItem.Text = "Xóa";
             this.btnXoaItem.Click += new System.EventHandler(this.btnXoaItem_Click);
             // 
             // btnSuaItem
             // 
             this.btnSuaItem.Name = "btnSuaItem";
-            this.btnSuaItem.Size = new System.Drawing.Size(152, 22);
+            this.btnSuaItem.Size = new System.Drawing.Size(137, 22);
             this.btnSuaItem.Text = "Sửa";
             // 
             // btnXemItem
             // 
             this.btnXemItem.Name = "btnXemItem";
-            this.btnXemItem.Size = new System.Drawing.Size(152, 22);
+            this.btnXemItem.Size = new System.Drawing.Size(137, 22);
             this.btnXemItem.Text = "Xem chi tiết";
             // 
             // FormDanhMucTenDuong

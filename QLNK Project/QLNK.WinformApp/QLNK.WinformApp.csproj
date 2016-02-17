@@ -74,11 +74,23 @@
     <Compile Include="Forms\FormCaiDatNguoiDung.Designer.cs">
       <DependentUpon>FormCaiDatNguoiDung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormDanhMucTrangThaiNhaO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDanhMucTrangThaiNhaO.Designer.cs">
+      <DependentUpon>FormDanhMucTrangThaiNhaO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormDanhMucTenDuong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormDanhMucTenDuong.Designer.cs">
       <DependentUpon>FormDanhMucTenDuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormWaitScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWaitScreen.Designer.cs">
+      <DependentUpon>FormWaitScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -94,8 +106,14 @@
     <EmbeddedResource Include="Forms\FormCaiDatNguoiDung.resx">
       <DependentUpon>FormCaiDatNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDanhMucTrangThaiNhaO.resx">
+      <DependentUpon>FormDanhMucTrangThaiNhaO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDanhMucTenDuong.resx">
       <DependentUpon>FormDanhMucTenDuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormWaitScreen.resx">
+      <DependentUpon>FormWaitScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

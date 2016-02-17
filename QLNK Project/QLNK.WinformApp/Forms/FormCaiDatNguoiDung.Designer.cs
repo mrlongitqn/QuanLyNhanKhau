@@ -48,7 +48,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnXoaItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSuaItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnXemItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvNguoiDung)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -236,29 +235,22 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnXoaItem,
-            this.btnSuaItem,
-            this.btnXemItem});
+            this.btnSuaItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 48);
             // 
             // btnXoaItem
             // 
             this.btnXoaItem.Name = "btnXoaItem";
-            this.btnXoaItem.Size = new System.Drawing.Size(137, 22);
+            this.btnXoaItem.Size = new System.Drawing.Size(94, 22);
             this.btnXoaItem.Text = "Xóa";
             this.btnXoaItem.Click += new System.EventHandler(this.btnXoaItem_Click);
             // 
             // btnSuaItem
             // 
             this.btnSuaItem.Name = "btnSuaItem";
-            this.btnSuaItem.Size = new System.Drawing.Size(137, 22);
+            this.btnSuaItem.Size = new System.Drawing.Size(94, 22);
             this.btnSuaItem.Text = "Sửa";
-            // 
-            // btnXemItem
-            // 
-            this.btnXemItem.Name = "btnXemItem";
-            this.btnXemItem.Size = new System.Drawing.Size(137, 22);
-            this.btnXemItem.Text = "Xem chi tiết";
             // 
             // FormCaiDatNguoiDung
             // 
@@ -313,6 +305,5 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnXoaItem;
         private System.Windows.Forms.ToolStripMenuItem btnSuaItem;
-        private System.Windows.Forms.ToolStripMenuItem btnXemItem;
     }
 }
