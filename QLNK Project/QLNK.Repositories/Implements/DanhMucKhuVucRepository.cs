@@ -8,9 +8,9 @@ using QLNK.Repositories.Interfaces;
 
 namespace QLNK.Repositories.Implements
 {
-   public class DanhMucKhuvucRepository : BaseRepository<DanhMucKhuVuc>, IDanhMucKhuVucRepository
+   public class DanhMucKhuVucRepository : BaseRepository<DanhMucKhuVuc>, IDanhMucKhuVucRepository
     {
-       public DanhMucKhuvucRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
+       public DanhMucKhuVucRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
        {
        }
     }
