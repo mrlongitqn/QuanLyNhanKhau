@@ -118,7 +118,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(416, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(751, 113);
+            this.groupBox1.Size = new System.Drawing.Size(532, 113);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quyền sử dụng:";
@@ -204,7 +204,7 @@
             this.dgrvNguoiDung.Name = "dgrvNguoiDung";
             this.dgrvNguoiDung.ReadOnly = true;
             this.dgrvNguoiDung.RowHeadersVisible = false;
-            this.dgrvNguoiDung.Size = new System.Drawing.Size(1174, 381);
+            this.dgrvNguoiDung.Size = new System.Drawing.Size(955, 381);
             this.dgrvNguoiDung.TabIndex = 10;
             this.dgrvNguoiDung.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgrvNguoiDung_CellMouseUp);
             // 
@@ -212,9 +212,9 @@
             // 
             this.btnLuu.BackColor = System.Drawing.Color.White;
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
-            this.btnLuu.Location = new System.Drawing.Point(136, 170);
+            this.btnLuu.Location = new System.Drawing.Point(135, 157);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.Size = new System.Drawing.Size(111, 48);
             this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -224,9 +224,9 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
-            this.btnThoat.Location = new System.Drawing.Point(232, 170);
+            this.btnThoat.Location = new System.Drawing.Point(256, 157);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.Size = new System.Drawing.Size(111, 48);
             this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -264,7 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 592);
+            this.ClientSize = new System.Drawing.Size(960, 592);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgrvNguoiDung);
