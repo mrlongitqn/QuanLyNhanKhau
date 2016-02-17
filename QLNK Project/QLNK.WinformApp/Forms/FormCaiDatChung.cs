@@ -14,7 +14,7 @@ namespace QLNK.WinformApp.Forms
         {
             this._xuLiCauHinhHeThong = xuLiCauHinhHeThong;
             InitializeComponent();
-            LoadDuLieu();
+            //LoadDuLieu();
         }
 
        
