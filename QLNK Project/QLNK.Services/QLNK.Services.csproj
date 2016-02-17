@@ -40,7 +40,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TinhTrangNhaOService.cs" />
+    <Compile Include="TinhTrangCuTruService.cs" />
+    <Compile Include="NhanKhauService.cs" />
+    <Compile Include="LoaiHoSoService.cs" />
+    <Compile Include="HoKhauService.cs" />
+    <Compile Include="DanhMucToDanPhoService.cs" />
+    <Compile Include="DanhMucKhuVucService.cs" />
+    <Compile Include="DanhMucKhuPhoService.cs" />
+    <Compile Include="DanhMucDuongService.cs" />
+    <Compile Include="CauHinhNguoiDungService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CauHinhHeThongService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLNK.EF\QLNK.EF.csproj">
+      <Project>{c1f0d0ce-eab5-46b8-b0d8-486549b21b7b}</Project>
+      <Name>QLNK.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLNK.Repositories\QLNK.Repositories.csproj">
+      <Project>{b8af7c8f-d6be-40b4-a683-7f132202171f}</Project>
+      <Name>QLNK.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
