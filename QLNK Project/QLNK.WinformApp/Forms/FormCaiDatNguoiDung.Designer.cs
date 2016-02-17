@@ -48,6 +48,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnXoaItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSuaItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnXemItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvNguoiDung)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -213,7 +214,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Location = new System.Drawing.Point(135, 157);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(102, 37);
+            this.btnLuu.Size = new System.Drawing.Size(111, 48);
             this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -225,7 +226,7 @@
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
             this.btnThoat.Location = new System.Drawing.Point(256, 157);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(110, 37);
+            this.btnThoat.Size = new System.Drawing.Size(111, 48);
             this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -235,22 +236,29 @@
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnXoaItem,
-            this.btnSuaItem});
+            this.btnSuaItem,
+            this.btnXemItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
             // 
             // btnXoaItem
             // 
             this.btnXoaItem.Name = "btnXoaItem";
-            this.btnXoaItem.Size = new System.Drawing.Size(94, 22);
+            this.btnXoaItem.Size = new System.Drawing.Size(137, 22);
             this.btnXoaItem.Text = "Xóa";
             this.btnXoaItem.Click += new System.EventHandler(this.btnXoaItem_Click);
             // 
             // btnSuaItem
             // 
             this.btnSuaItem.Name = "btnSuaItem";
-            this.btnSuaItem.Size = new System.Drawing.Size(94, 22);
+            this.btnSuaItem.Size = new System.Drawing.Size(137, 22);
             this.btnSuaItem.Text = "Sửa";
+            // 
+            // btnXemItem
+            // 
+            this.btnXemItem.Name = "btnXemItem";
+            this.btnXemItem.Size = new System.Drawing.Size(137, 22);
+            this.btnXemItem.Text = "Xem chi tiết";
             // 
             // FormCaiDatNguoiDung
             // 
@@ -305,5 +313,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnXoaItem;
         private System.Windows.Forms.ToolStripMenuItem btnSuaItem;
+        private System.Windows.Forms.ToolStripMenuItem btnXemItem;
     }
 }

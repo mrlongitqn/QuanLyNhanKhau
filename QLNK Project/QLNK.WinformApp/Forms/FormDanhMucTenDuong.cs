@@ -1,17 +1,16 @@
-﻿using QLNK.Common.Utilities;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using QLNK.Common.Utilities;
 using QLNK.EF;
 using QLNK.Repositories.Interfaces;
 using QLNK.Services;
-using System;
-using System.Linq;
-using System.Windows.Forms;
 
 namespace QLNK.WinformApp.Forms
 {
     public partial class FormDanhMucTenDuong : DevComponents.DotNetBar.Office2007Form
     {
         private int _rowIndex = -1;
-        private int _currentId = -1;
         private readonly DanhMucDuongService _danhMucDuongService;
         public FormDanhMucTenDuong(IUnitOfWork unitOfWork)
         {
@@ -22,12 +21,9 @@ namespace QLNK.WinformApp.Forms
 
         private void LoadData()
         {
-            var danhMucDuongs = _danhMucDuongService.GetAll().Where(t => t.TrangThai).ToList();
-            _danhMucDuongService.SapXepThuTu(danhMucDuongs);
-            dgrvDanhMucDuong.DataSource = danhMucDuongs;
+            dgrvDanhMucDuong.DataSource = _danhMucDuongService.GetAll().Where(t=>t.TrangThai).ToList();
             dgrvDanhMucDuong.Columns[0].Visible = false;
-            dgrvDanhMucDuong.Columns[2].Visible = false;
-            dgrvDanhMucDuong.Columns[4].Visible = false;
+            dgrvDanhMucDuong.Columns[3].Visible = false;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -56,7 +52,6 @@ namespace QLNK.WinformApp.Forms
                 case MouseButtons.Right:
                     dgrvDanhMucDuong.Rows[e.RowIndex].Selected = true;
                     _rowIndex = e.RowIndex;
-                    _currentId = (int)dgrvDanhMucDuong.Rows[e.RowIndex].Cells[1].Value;
                     dgrvDanhMucDuong.CurrentCell = dgrvDanhMucDuong.Rows[e.RowIndex].Cells[1];
                     contextMenuStrip1.Show(dgrvDanhMucDuong, e.Location);
                     contextMenuStrip1.Show(Cursor.Position);
@@ -75,19 +70,11 @@ namespace QLNK.WinformApp.Forms
 
         private void btnXoaItem_Click(object sender, EventArgs e)
         {
-            var dialogResult = MessageBox.Show(@"Bạn có muốn xóa tên đường này?", @"Xóa tên đường", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var dialogResult = MessageBox.Show(@"Bạn có muốn xóa tên đường này?",@"Xóa tên đường",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if (dialogResult != DialogResult.Yes) return;
-            var danhMucDuong = _danhMucDuongService.SingleOrDefault(_currentId);
+            var id = (int)dgrvDanhMucDuong.Rows[_rowIndex].Cells[0].Value;
+            var danhMucDuong = _danhMucDuongService.SingleOrDefault(id);
             danhMucDuong.TrangThai = false;
-            _danhMucDuongService.Update(danhMucDuong);
-            LoadData();
-        }
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            var danhMucDuong = _danhMucDuongService.SingleOrDefault(_currentId);
-            danhMucDuong.TenDayDu = Helpers.GetShortName(txtTenDuong.Text);
-            danhMucDuong.TenDayDu = txtTenDuong.Text;
             _danhMucDuongService.Update(danhMucDuong);
             LoadData();
         }

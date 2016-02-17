@@ -11,13 +11,12 @@ using System.ComponentModel;
 
 namespace QLNK.EF
 {
+    using System;
+    using System.Collections.Generic;
+    
     public partial class DanhMucDuong
     {
         public int Id { get; set; }
-
-        [DisplayName("Số thứ tự")]
-        public int SoThuTu { get; set; }
-
         [DisplayName("Tên viết tắt")]
         public string TenVietTat { get; set; }
         [DisplayName("Tên đường")]
