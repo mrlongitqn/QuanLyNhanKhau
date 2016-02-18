@@ -34,8 +34,8 @@ namespace QLNK.WinformApp
         private void btnTinhTrangNhaO_Click(object sender, EventArgs e)
         {
 
-            FormDanhMucTrangThaiNhaO formDanhMucTrangThaiNhaO = new FormDanhMucTrangThaiNhaO(_unitOfWork) { MdiParent = this };
-            formDanhMucTrangThaiNhaO.Show();
+            //FormDanhMucTrangThaiNhaO formDanhMucTrangThaiNhaO = new FormDanhMucTrangThaiNhaO(_unitOfWork) { MdiParent = this };
+            //formDanhMucTrangThaiNhaO.Show();
         }
 
     }
