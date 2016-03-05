@@ -75,13 +75,29 @@ namespace QLNK.WinformApp.Forms
             var id = (int)dgrvDanhMucDuong.Rows[_rowIndex].Cells[0].Value;
             var danhMucDuong = _danhMucDuongService.SingleOrDefault(id);
             danhMucDuong.TrangThai = false;
-            _danhMucDuongService.Update(danhMucDuong);
-            LoadData();
+            if (_danhMucDuongService.Update(danhMucDuong) > 0)
+            {
+                LoadData();
+            }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            var dialogResult = MessageBox.Show(@"Bạn có muốn lưu thay đổi tên đường?", @"Cập nhật tên đường", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult != DialogResult.Yes) return;
+            var id = (int)dgrvDanhMucDuong.Rows[_rowIndex].Cells[0].Value;
+            var danhMucDuong = _danhMucDuongService.SingleOrDefault(id);
+            danhMucDuong.TenVietTat = Helpers.GetShortName(txtTenDuong.Text);
+            danhMucDuong.TenDayDu = txtTenDuong.Text;
+            if (_danhMucDuongService.Update(danhMucDuong) > 0)
+            {
+                LoadData();
+            }
+        }
 
+        private void btnSuaItem_Click(object sender, EventArgs e)
+        {
+            txtTenDuong.Focus();
         }
     }
 }

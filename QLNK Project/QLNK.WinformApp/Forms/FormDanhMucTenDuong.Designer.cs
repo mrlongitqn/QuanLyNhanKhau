@@ -36,8 +36,8 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnXoaItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSuaItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnXoaItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvDanhMucDuong)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,10 +54,12 @@
             // 
             // txtTenDuong
             // 
-            this.txtTenDuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDuong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenDuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDuong.Location = new System.Drawing.Point(107, 33);
             this.txtTenDuong.Name = "txtTenDuong";
-            this.txtTenDuong.Size = new System.Drawing.Size(321, 22);
+            this.txtTenDuong.Size = new System.Drawing.Size(386, 24);
             this.txtTenDuong.TabIndex = 1;
             // 
             // dgrvDanhMucDuong
@@ -73,16 +75,17 @@
             this.dgrvDanhMucDuong.Name = "dgrvDanhMucDuong";
             this.dgrvDanhMucDuong.ReadOnly = true;
             this.dgrvDanhMucDuong.RowHeadersVisible = false;
-            this.dgrvDanhMucDuong.Size = new System.Drawing.Size(588, 487);
+            this.dgrvDanhMucDuong.Size = new System.Drawing.Size(588, 545);
             this.dgrvDanhMucDuong.TabIndex = 2;
             this.dgrvDanhMucDuong.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgrvDanhMucDuong_CellMouseUp);
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(434, 33);
+            this.btnThem.Location = new System.Drawing.Point(499, 33);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.Size = new System.Drawing.Size(93, 24);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -90,10 +93,11 @@
             // 
             // btnLuu
             // 
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(173, 611);
+            this.btnLuu.Location = new System.Drawing.Point(173, 640);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(111, 48);
+            this.btnLuu.Size = new System.Drawing.Size(111, 39);
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -101,10 +105,11 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(328, 611);
+            this.btnThoat.Location = new System.Drawing.Point(328, 640);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(100, 48);
+            this.btnThoat.Size = new System.Drawing.Size(100, 39);
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -118,18 +123,19 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
             // 
-            // btnXoaItem
-            // 
-            this.btnXoaItem.Name = "btnXoaItem";
-            this.btnXoaItem.Size = new System.Drawing.Size(137, 22);
-            this.btnXoaItem.Text = "Xóa";
-            this.btnXoaItem.Click += new System.EventHandler(this.btnXoaItem_Click);
-            // 
             // btnSuaItem
             // 
             this.btnSuaItem.Name = "btnSuaItem";
-            this.btnSuaItem.Size = new System.Drawing.Size(137, 22);
+            this.btnSuaItem.Size = new System.Drawing.Size(152, 22);
             this.btnSuaItem.Text = "Sửa";
+            this.btnSuaItem.Click += new System.EventHandler(this.btnSuaItem_Click);
+            // 
+            // btnXoaItem
+            // 
+            this.btnXoaItem.Name = "btnXoaItem";
+            this.btnXoaItem.Size = new System.Drawing.Size(94, 22);
+            this.btnXoaItem.Text = "Xóa";
+            this.btnXoaItem.Click += new System.EventHandler(this.btnXoaItem_Click);
             // 
             // FormDanhMucTenDuong
             // 

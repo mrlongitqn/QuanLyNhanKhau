@@ -74,6 +74,18 @@
     <Compile Include="Forms\FormCaiDatNguoiDung.Designer.cs">
       <DependentUpon>FormCaiDatNguoiDung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormDanhMucKhuPho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDanhMucKhuPho.Designer.cs">
+      <DependentUpon>FormDanhMucKhuPho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDanhMucKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDanhMucKhuVuc.Designer.cs">
+      <DependentUpon>FormDanhMucKhuVuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormDanhMucTenDuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCaiDatNguoiDung.resx">
       <DependentUpon>FormCaiDatNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDanhMucKhuPho.resx">
+      <DependentUpon>FormDanhMucKhuPho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDanhMucKhuVuc.resx">
+      <DependentUpon>FormDanhMucKhuVuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDanhMucTenDuong.resx">
       <DependentUpon>FormDanhMucTenDuong.cs</DependentUpon>

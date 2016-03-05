@@ -11,9 +11,8 @@ using System.ComponentModel;
 
 namespace QLNK.EF
 {
-    using System;
     using System.Collections.Generic;
-    
+
     public partial class DanhMucKhuPho
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,15 +21,19 @@ namespace QLNK.EF
             this.DanhMucKhuVucs = new HashSet<DanhMucKhuVuc>();
             this.DanhMucToDanPhoes = new HashSet<DanhMucToDanPho>();
         }
-    
+
         public int Id { get; set; }
+
+        [DisplayName("Số thứ tự")]
+        public int STT { get; set; }
+
         [DisplayName("Tên viết tắt")]
         public string TenVietTat { get; set; }
         [DisplayName("Tên khu phố")]
         public string TenDayDu { get; set; }
         [DisplayName("Trạng thái")]
         public bool TrangThai { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DanhMucKhuVuc> DanhMucKhuVucs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

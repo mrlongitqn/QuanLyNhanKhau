@@ -1,25 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QLNK.EF;
+﻿using QLNK.EF;
 using QLNK.Repositories.Implements;
 using QLNK.Repositories.Interfaces;
+using System.Collections.Generic;
 
 namespace QLNK.Services
 {
-   public class DanhMucKhuPhoService : DanhMucKhuPhoRepository
-   {
-       private readonly DanhMucDuongRepository _danhMucDuongRepository;
-       public DanhMucKhuPhoService(IUnitOfWork unitOfWork) : base(unitOfWork)
-       {
-           _danhMucDuongRepository = new DanhMucDuongRepository(unitOfWork);
-       }
-
-        public List<DanhMucDuong> Search(string keyword)
+    public class DanhMucKhuPhoService : DanhMucKhuPhoRepository
+    {
+        private readonly DanhMucDuongRepository _danhMucDuongRepository;
+        public DanhMucKhuPhoService(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return _danhMucDuongRepository.GetAll().Where(t=>t.TenVietTat.Contains(keyword) || t.TenDayDu.Contains(keyword)).ToList();
+            _danhMucDuongRepository = new DanhMucDuongRepository(unitOfWork);
+        }
+        public void SapXepThuTu(List<DanhMucKhuPho> danhMucKhuPhos)
+        {
+            var stt = 1;
+            foreach (var item in danhMucKhuPhos)
+            {
+                item.STT = stt;
+                stt++;
+            }
         }
     }
 }
