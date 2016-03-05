@@ -178,6 +178,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ReportFiles\" />
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
