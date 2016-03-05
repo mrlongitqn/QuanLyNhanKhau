@@ -1,10 +1,10 @@
-﻿using System;
-using System.Linq;
-using System.Windows.Forms;
-using QLNK.Common.Utilities;
+﻿using QLNK.Common.Utilities;
 using QLNK.EF;
 using QLNK.Repositories.Interfaces;
 using QLNK.Services;
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace QLNK.WinformApp.Forms
 {
@@ -21,7 +21,7 @@ namespace QLNK.WinformApp.Forms
 
         private void LoadData()
         {
-            dgrvDanhMucDuong.DataSource = _danhMucDuongService.GetAll().Where(t=>t.TrangThai).ToList();
+            dgrvDanhMucDuong.DataSource = _danhMucDuongService.GetAll().Where(t => t.TrangThai).ToList();
             dgrvDanhMucDuong.Columns[0].Visible = false;
             dgrvDanhMucDuong.Columns[3].Visible = false;
         }
@@ -70,13 +70,18 @@ namespace QLNK.WinformApp.Forms
 
         private void btnXoaItem_Click(object sender, EventArgs e)
         {
-            var dialogResult = MessageBox.Show(@"Bạn có muốn xóa tên đường này?",@"Xóa tên đường",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            var dialogResult = MessageBox.Show(@"Bạn có muốn xóa tên đường này?", @"Xóa tên đường", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult != DialogResult.Yes) return;
             var id = (int)dgrvDanhMucDuong.Rows[_rowIndex].Cells[0].Value;
             var danhMucDuong = _danhMucDuongService.SingleOrDefault(id);
             danhMucDuong.TrangThai = false;
             _danhMucDuongService.Update(danhMucDuong);
             LoadData();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -80,6 +80,18 @@
     <Compile Include="Forms\FormDanhMucTenDuong.Designer.cs">
       <DependentUpon>FormDanhMucTenDuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormTinhTrangNhaCuTru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTinhTrangNhaCuTru.Designer.cs">
+      <DependentUpon>FormTinhTrangNhaCuTru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTinhTrangNhaO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTinhTrangNhaO.Designer.cs">
+      <DependentUpon>FormTinhTrangNhaO.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDanhMucTenDuong.resx">
       <DependentUpon>FormDanhMucTenDuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTinhTrangNhaCuTru.resx">
+      <DependentUpon>FormTinhTrangNhaCuTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTinhTrangNhaO.resx">
+      <DependentUpon>FormTinhTrangNhaO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

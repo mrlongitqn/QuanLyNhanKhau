@@ -38,7 +38,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnXoaItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSuaItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnXemItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvDanhMucDuong)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +64,8 @@
             // 
             this.dgrvDanhMucDuong.AllowUserToAddRows = false;
             this.dgrvDanhMucDuong.AllowUserToDeleteRows = false;
-            this.dgrvDanhMucDuong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgrvDanhMucDuong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgrvDanhMucDuong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrvDanhMucDuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -97,6 +97,7 @@
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThoat
             // 
@@ -112,11 +113,10 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnXoaItem,
             this.btnSuaItem,
-            this.btnXemItem});
+            this.btnXoaItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
             // 
             // btnXoaItem
             // 
@@ -130,12 +130,6 @@
             this.btnSuaItem.Name = "btnSuaItem";
             this.btnSuaItem.Size = new System.Drawing.Size(137, 22);
             this.btnSuaItem.Text = "Sửa";
-            // 
-            // btnXemItem
-            // 
-            this.btnXemItem.Name = "btnXemItem";
-            this.btnXemItem.Size = new System.Drawing.Size(137, 22);
-            this.btnXemItem.Text = "Xem chi tiết";
             // 
             // FormDanhMucTenDuong
             // 
@@ -169,6 +163,5 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnXoaItem;
         private System.Windows.Forms.ToolStripMenuItem btnSuaItem;
-        private System.Windows.Forms.ToolStripMenuItem btnXemItem;
     }
 }
