@@ -17,5 +17,14 @@ namespace QLNK.Services
            _nguoiDungRepository = new NguoiDungRepository(unitOfWork);
        }
 
+       public void SapXepThuTu(List<NguoiDung> nguoiDungs)
+       {
+           var stt = 1;
+           foreach (var item in nguoiDungs)
+           {
+               item.SoThuTu = stt;
+               stt++;
+           }
+       }
     }
 }

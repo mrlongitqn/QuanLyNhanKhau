@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,14 +39,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rbLoaiNguoiDung = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rbBCH = new System.Windows.Forms.RadioButton();
+            this.rbNCTD = new System.Windows.Forms.RadioButton();
+            this.rbCSKV = new System.Windows.Forms.RadioButton();
             this.dgrvNguoiDung = new System.Windows.Forms.DataGridView();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnXoaItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSuaItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnXemItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvNguoiDung)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -112,7 +118,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(416, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(751, 113);
+            this.groupBox1.Size = new System.Drawing.Size(532, 113);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quyền sử dụng:";
@@ -148,61 +154,67 @@
             this.label4.Text = "- BCH: Thiết lập hệ thống, chỉnh sửa nội dung dữ liệu; tìm kiểm, xem danh sách, t" +
     "hống kê.";
             // 
-            // rbLoaiNguoiDung
+            // rbBCH
             // 
-            this.rbLoaiNguoiDung.AutoSize = true;
-            this.rbLoaiNguoiDung.Location = new System.Drawing.Point(135, 130);
-            this.rbLoaiNguoiDung.Name = "rbLoaiNguoiDung";
-            this.rbLoaiNguoiDung.Size = new System.Drawing.Size(54, 20);
-            this.rbLoaiNguoiDung.TabIndex = 7;
-            this.rbLoaiNguoiDung.TabStop = true;
-            this.rbLoaiNguoiDung.Text = "BCH";
-            this.rbLoaiNguoiDung.UseVisualStyleBackColor = true;
+            this.rbBCH.AutoSize = true;
+            this.rbBCH.ForeColor = System.Drawing.Color.Black;
+            this.rbBCH.Location = new System.Drawing.Point(135, 130);
+            this.rbBCH.Name = "rbBCH";
+            this.rbBCH.Size = new System.Drawing.Size(54, 20);
+            this.rbBCH.TabIndex = 7;
+            this.rbBCH.TabStop = true;
+            this.rbBCH.Text = "BCH";
+            this.rbBCH.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // rbNCTD
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(220, 129);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(64, 20);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "NCTD";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbNCTD.AutoSize = true;
+            this.rbNCTD.ForeColor = System.Drawing.Color.Black;
+            this.rbNCTD.Location = new System.Drawing.Point(220, 129);
+            this.rbNCTD.Name = "rbNCTD";
+            this.rbNCTD.Size = new System.Drawing.Size(64, 20);
+            this.rbNCTD.TabIndex = 8;
+            this.rbNCTD.TabStop = true;
+            this.rbNCTD.Text = "NCTD";
+            this.rbNCTD.UseVisualStyleBackColor = false;
             // 
-            // radioButton3
+            // rbCSKV
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(306, 130);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(61, 20);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "CSKV";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbCSKV.AutoSize = true;
+            this.rbCSKV.ForeColor = System.Drawing.Color.Black;
+            this.rbCSKV.Location = new System.Drawing.Point(306, 130);
+            this.rbCSKV.Name = "rbCSKV";
+            this.rbCSKV.Size = new System.Drawing.Size(61, 20);
+            this.rbCSKV.TabIndex = 9;
+            this.rbCSKV.TabStop = true;
+            this.rbCSKV.Text = "CSKV";
+            this.rbCSKV.UseVisualStyleBackColor = false;
             // 
             // dgrvNguoiDung
             // 
             this.dgrvNguoiDung.AllowUserToAddRows = false;
-            this.dgrvNguoiDung.AllowUserToDeleteRows = false;
+            this.dgrvNguoiDung.AllowUserToOrderColumns = true;
             this.dgrvNguoiDung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgrvNguoiDung.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrvNguoiDung.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgrvNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgrvNguoiDung.Location = new System.Drawing.Point(-3, 210);
+            this.dgrvNguoiDung.Location = new System.Drawing.Point(3, 210);
             this.dgrvNguoiDung.Name = "dgrvNguoiDung";
             this.dgrvNguoiDung.ReadOnly = true;
             this.dgrvNguoiDung.RowHeadersVisible = false;
-            this.dgrvNguoiDung.Size = new System.Drawing.Size(1185, 381);
+            this.dgrvNguoiDung.Size = new System.Drawing.Size(955, 381);
             this.dgrvNguoiDung.TabIndex = 10;
+            this.dgrvNguoiDung.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgrvNguoiDung_CellMouseUp);
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(136, 170);
+            this.btnLuu.BackColor = System.Drawing.Color.White;
+            this.btnLuu.ForeColor = System.Drawing.Color.Black;
+            this.btnLuu.Location = new System.Drawing.Point(135, 157);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.Size = new System.Drawing.Size(111, 48);
             this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -210,25 +222,55 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(232, 170);
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.ForeColor = System.Drawing.Color.Black;
+            this.btnThoat.Location = new System.Drawing.Point(256, 157);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.Size = new System.Drawing.Size(111, 48);
             this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnXoaItem,
+            this.btnSuaItem,
+            this.btnXemItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
+            // 
+            // btnXoaItem
+            // 
+            this.btnXoaItem.Name = "btnXoaItem";
+            this.btnXoaItem.Size = new System.Drawing.Size(137, 22);
+            this.btnXoaItem.Text = "Xóa";
+            this.btnXoaItem.Click += new System.EventHandler(this.btnXoaItem_Click);
+            // 
+            // btnSuaItem
+            // 
+            this.btnSuaItem.Name = "btnSuaItem";
+            this.btnSuaItem.Size = new System.Drawing.Size(137, 22);
+            this.btnSuaItem.Text = "Sửa";
+            // 
+            // btnXemItem
+            // 
+            this.btnXemItem.Name = "btnXemItem";
+            this.btnXemItem.Size = new System.Drawing.Size(137, 22);
+            this.btnXemItem.Text = "Xem chi tiết";
+            // 
             // FormCaiDatNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 592);
+            this.ClientSize = new System.Drawing.Size(960, 592);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgrvNguoiDung);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.rbLoaiNguoiDung);
+            this.Controls.Add(this.rbCSKV);
+            this.Controls.Add(this.rbNCTD);
+            this.Controls.Add(this.rbBCH);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTenDangNhap);
@@ -244,6 +286,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvNguoiDung)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,11 +304,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton rbLoaiNguoiDung;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rbBCH;
+        private System.Windows.Forms.RadioButton rbNCTD;
+        private System.Windows.Forms.RadioButton rbCSKV;
         private System.Windows.Forms.DataGridView dgrvNguoiDung;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem btnXoaItem;
+        private System.Windows.Forms.ToolStripMenuItem btnSuaItem;
+        private System.Windows.Forms.ToolStripMenuItem btnXemItem;
     }
 }

@@ -17,6 +17,8 @@ namespace QLNK.EF
     public partial class NguoiDung
     {
         public int Id { get; set; }
+        [DisplayName("STT")]
+        public int SoThuTu { get; set; }
         [DisplayName("Họ và tên")]
         public string TenNguoiDung { get; set; }
         [DisplayName("Tên đăng nhập")]

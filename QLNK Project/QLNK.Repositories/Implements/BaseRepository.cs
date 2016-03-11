@@ -76,11 +76,11 @@ namespace QLNK.Repositories.Implements
 
         }
 
-        public virtual void Update(T entity)
+        public virtual int Update(T entity)
         {
             DbSet.Attach(entity);
             _unitOfWork.Db.Entry(entity).State = EntityState.Modified;
-            this._unitOfWork.Db.SaveChanges();
+           return this._unitOfWork.Db.SaveChanges();
         }
         public virtual bool UpdateResult(T entity)
         {
